@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/sdkFragment1">
+
+    <fragment
+        android:id="@+id/sdkFragment1"
+        android:name="com.stc.businesssdk.fragment.SdkFragment1"
+        android:label="fragment_sdk1"
+        tools:layout="@layout/fragment_sdk1" >
+        <action
+            android:id="@+id/action_sdkFragment1_to_sdkFragment2"
+            app:destination="@id/sdkFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/sdkFragment2"
+        android:name="com.stc.businesssdk.fragment.SdkFragment2"
+        android:label="fragment_sdk2"
+        tools:layout="@layout/fragment_sdk2" />
+</navigation>
